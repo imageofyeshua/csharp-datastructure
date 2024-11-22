@@ -14,5 +14,8 @@ class Program
     {
         Price priceRegular = new(100, CurrencyEnum.WON);
         System.Console.WriteLine(priceRegular);
+
+        Price priceDiscount = priceRegular with { Amount = 50 };
+        System.Console.WriteLine(priceDiscount);
     }
 }
